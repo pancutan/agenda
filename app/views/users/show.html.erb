@@ -1,0 +1,57 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @user.nombre %>
+</p>
+
+<p>
+  <strong>Apellido:</strong>
+  <%= @user.apellido %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @user.email %>
+</p>
+
+<p>
+  <strong>Activo:</strong>
+  <%= @user.activo %>
+</p>
+
+<p>
+  <strong>Edad:</strong>
+  <%= @user.edad %>
+</p>
+
+<p>
+	<strong>Teléfonos</strong>
+	<ul>
+	  <% @user.phones.all.each do |t| %>
+	    <li>
+	      <%= t.telefono %>
+	    </li>
+	  <% end %>
+	</ul>
+</p>
+
+<p>
+  <strong>Provincia:</strong>
+  <%= @user.province.provincia %>
+</p>
+
+<p>
+  <strong>Pais</strong>
+  <%= @user.province.country.pais %>
+</p>
+
+
+
+<p>
+  <strong>Detalles:</strong>
+  <%= @user.detalles %>
+</p>
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>

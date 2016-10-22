@@ -1,0 +1,1168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>test.log</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="../../../css/reset.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="../../../css/main.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="../../../css/github.css" type="text/css" media="screen" />
+<script src="../../../js/jquery-1.3.2.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../../js/jquery-effect.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../../js/main.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../../js/highlight.pack.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+
+<body>
+    <div class="banner">
+        
+        <h1>
+            test.log
+        </h1>
+        <ul class="files">
+            <li>agenda/log/test.log</li>
+            <li>Last modified: 2016-10-10 11:25:00 -0300</li>
+        </ul>
+    </div>
+
+    <div id="bodyContent">
+        <div id="content">
+  
+    <div class="description">
+      
+<pre><code>[1m[35m (289.8ms)[0m  [1m[35mCREATE TABLE &quot;phones&quot; (&quot;id&quot; INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, &quot;telefono&quot; varchar, &quot;type_id&quot; integer, &quot;user_id&quot; integer, &quot;created_at&quot; datetime NOT NULL, &quot;updated_at&quot; datetime NOT NULL)[0m
+[1m[35m (226.5ms)[0m  [1m[35mCREATE TABLE &quot;users&quot; (&quot;id&quot; INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, &quot;nombre&quot; varchar, &quot;apellido&quot; varchar, &quot;email&quot; varchar, &quot;activo&quot; boolean, &quot;edad&quot; integer, &quot;detalles&quot; text, &quot;created_at&quot; datetime NOT NULL, &quot;updated_at&quot; datetime NOT NULL)[0m
+[1m[35m (108.6ms)[0m  [1m[35mCREATE TABLE &quot;schema_migrations&quot; (&quot;version&quot; varchar NOT NULL PRIMARY KEY)[0m
+[1m[35m (0.4ms)[0m  [1m[34mSELECT version FROM &quot;schema_migrations&quot;[0m
+[1m[35m (270.4ms)[0m  [1m[32mINSERT INTO &quot;schema_migrations&quot; (version) VALUES (&#39;20161003193947&#39;)[0m
+[1m[35m (0.4ms)[0m  [1m[34mselect sqlite_version(*)[0m
+[1m[35m (151.5ms)[0m  [1m[32mINSERT INTO schema_migrations (version) VALUES (&#39;20161003192829&#39;);</code></pre>
+
+<p>[0m</p>
+
+<pre><code>[1m[35m (210.6ms)[0m  [1m[35mCREATE TABLE &quot;ar_internal_metadata&quot; (&quot;key&quot; varchar NOT NULL PRIMARY KEY, &quot;value&quot; varchar, &quot;created_at&quot; datetime NOT NULL, &quot;updated_at&quot; datetime NOT NULL)[0m
+[1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  &quot;ar_internal_metadata&quot;.* FROM &quot;ar_internal_metadata&quot; WHERE &quot;ar_internal_metadata&quot;.&quot;key&quot; = ? LIMIT ?[0m  [[&quot;key&quot;, :environment], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+[1m[35mSQL (5.2ms)[0m  [1m[32mINSERT INTO &quot;ar_internal_metadata&quot; (&quot;key&quot;, &quot;value&quot;, &quot;created_at&quot;, &quot;updated_at&quot;) VALUES (?, ?, ?, ?)[0m  [[&quot;key&quot;, &quot;environment&quot;], [&quot;value&quot;, &quot;test&quot;], [&quot;created_at&quot;, 2016-10-09 02:24:21 UTC], [&quot;updated_at&quot;, 2016-10-09 02:24:21 UTC]]
+[1m[35m (223.2ms)[0m  [1m[36mcommit transaction[0m
+[1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  &quot;ar_internal_metadata&quot;.* FROM &quot;ar_internal_metadata&quot; WHERE &quot;ar_internal_metadata&quot;.&quot;key&quot; = ? LIMIT ?[0m  [[&quot;key&quot;, :environment], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+[1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+[1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.* FROM &quot;schema_migrations&quot;[0m
+[1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.* FROM &quot;schema_migrations&quot;[0m
+[1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.* FROM &quot;schema_migrations&quot;[0m
+[1m[35m (0.5ms)[0m  [1m[34mSELECT &quot;ar_internal_metadata&quot;.&quot;value&quot; FROM &quot;ar_internal_metadata&quot; WHERE &quot;ar_internal_metadata&quot;.&quot;key&quot; = ?[0m  [[&quot;key&quot;, :environment]]
+[1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.* FROM &quot;schema_migrations&quot;[0m
+[1m[35m (0.2ms)[0m  [1m[34mSELECT &quot;ar_internal_metadata&quot;.&quot;value&quot; FROM &quot;ar_internal_metadata&quot; WHERE &quot;ar_internal_metadata&quot;.&quot;key&quot; = ?[0m  [[&quot;key&quot;, :environment]]
+[1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.* FROM &quot;schema_migrations&quot;[0m
+[1m[35m (0.2ms)[0m  [1m[34mSELECT &quot;ar_internal_metadata&quot;.&quot;value&quot; FROM &quot;ar_internal_metadata&quot; WHERE &quot;ar_internal_metadata&quot;.&quot;key&quot; = ?[0m  [[&quot;key&quot;, :environment]]
+[1m[35m (292.3ms)[0m  [1m[35mCREATE TABLE &quot;phones&quot; (&quot;id&quot; INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, &quot;telefono&quot; varchar, &quot;type_id&quot; integer, &quot;user_id&quot; integer, &quot;created_at&quot; datetime NOT NULL, &quot;updated_at&quot; datetime NOT NULL)[0m
+[1m[35m (208.5ms)[0m  [1m[35mCREATE TABLE &quot;types&quot; (&quot;id&quot; INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, &quot;tipo&quot; varchar, &quot;created_at&quot; datetime NOT NULL, &quot;updated_at&quot; datetime NOT NULL)[0m
+[1m[35m (210.5ms)[0m  [1m[35mCREATE TABLE &quot;users&quot; (&quot;id&quot; INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, &quot;nombre&quot; varchar, &quot;apellido&quot; varchar, &quot;email&quot; varchar, &quot;activo&quot; boolean, &quot;edad&quot; integer, &quot;detalles&quot; text, &quot;created_at&quot; datetime NOT NULL, &quot;updated_at&quot; datetime NOT NULL)[0m
+[1m[35m (205.8ms)[0m  [1m[35mCREATE TABLE &quot;schema_migrations&quot; (&quot;version&quot; varchar NOT NULL PRIMARY KEY)[0m
+[1m[35m (0.5ms)[0m  [1m[34mSELECT version FROM &quot;schema_migrations&quot;[0m
+[1m[35m (153.8ms)[0m  [1m[32mINSERT INTO &quot;schema_migrations&quot; (version) VALUES (&#39;20161009010207&#39;)[0m
+[1m[35m (0.4ms)[0m  [1m[34mselect sqlite_version(*)[0m
+[1m[35m (1772.5ms)[0m  [1m[32mINSERT INTO schema_migrations (version) VALUES (&#39;20161003192829&#39;), (&#39;20161003193947&#39;);</code></pre>
+
+<p>[0m</p>
+
+<pre><code>[1m[35m (446.5ms)[0m  [1m[35mCREATE TABLE &quot;ar_internal_metadata&quot; (&quot;key&quot; varchar NOT NULL PRIMARY KEY, &quot;value&quot; varchar, &quot;created_at&quot; datetime NOT NULL, &quot;updated_at&quot; datetime NOT NULL)[0m
+[1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  &quot;ar_internal_metadata&quot;.* FROM &quot;ar_internal_metadata&quot; WHERE &quot;ar_internal_metadata&quot;.&quot;key&quot; = ? LIMIT ?[0m  [[&quot;key&quot;, :environment], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+[1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO &quot;ar_internal_metadata&quot; (&quot;key&quot;, &quot;value&quot;, &quot;created_at&quot;, &quot;updated_at&quot;) VALUES (?, ?, ?, ?)[0m  [[&quot;key&quot;, &quot;environment&quot;], [&quot;value&quot;, &quot;test&quot;], [&quot;created_at&quot;, 2016-10-09 02:24:51 UTC], [&quot;updated_at&quot;, 2016-10-09 02:24:51 UTC]]
+[1m[35m (335.7ms)[0m  [1m[36mcommit transaction[0m
+[1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  &quot;ar_internal_metadata&quot;.* FROM &quot;ar_internal_metadata&quot; WHERE &quot;ar_internal_metadata&quot;.&quot;key&quot; = ? LIMIT ?[0m  [[&quot;key&quot;, :environment], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+[1m[35m (0.2ms)[0m  [1m[36mcommit transaction[0m
+[1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.* FROM &quot;schema_migrations&quot;[0m
+[1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+[1m[36mFixture Delete (0.5ms)[0m  [1m[31mDELETE FROM &quot;types&quot;[0m
+[1m[36mFixture Insert (0.4ms)[0m  [1m[32mINSERT INTO &quot;types&quot; (&quot;tipo&quot;, &quot;created_at&quot;, &quot;updated_at&quot;, &quot;id&quot;) VALUES (&#39;MyString&#39;, &#39;2016-10-09 02:24:52.503192&#39;, &#39;2016-10-09 02:24:52.503192&#39;, 980190962)[0m
+[1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO &quot;types&quot; (&quot;tipo&quot;, &quot;created_at&quot;, &quot;updated_at&quot;, &quot;id&quot;) VALUES (&#39;MyString&#39;, &#39;2016-10-09 02:24:52.503192&#39;, &#39;2016-10-09 02:24:52.503192&#39;, 298486374)[0m
+[1m[36mFixture Delete (0.2ms)[0m  [1m[31mDELETE FROM &quot;phones&quot;[0m
+[1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO &quot;phones&quot; (&quot;telefono&quot;, &quot;type_id&quot;, &quot;user_id&quot;, &quot;created_at&quot;, &quot;updated_at&quot;, &quot;id&quot;) VALUES (&#39;MyString&#39;, 1, 1, &#39;2016-10-09 02:24:52.515386&#39;, &#39;2016-10-09 02:24:52.515386&#39;, 980190962)[0m
+[1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO &quot;phones&quot; (&quot;telefono&quot;, &quot;type_id&quot;, &quot;user_id&quot;, &quot;created_at&quot;, &quot;updated_at&quot;, &quot;id&quot;) VALUES (&#39;MyString&#39;, 1, 1, &#39;2016-10-09 02:24:52.515386&#39;, &#39;2016-10-09 02:24:52.515386&#39;, 298486374)[0m
+[1m[36mFixture Delete (0.2ms)[0m  [1m[31mDELETE FROM &quot;users&quot;[0m
+[1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO &quot;users&quot; (&quot;nombre&quot;, &quot;apellido&quot;, &quot;email&quot;, &quot;activo&quot;, &quot;edad&quot;, &quot;detalles&quot;, &quot;created_at&quot;, &quot;updated_at&quot;, &quot;id&quot;) VALUES (&#39;MyString&#39;, &#39;MyString&#39;, &#39;MyString&#39;, &#39;f&#39;, 1, &#39;MyText&#39;, &#39;2016-10-09 02:24:52.518819&#39;, &#39;2016-10-09 02:24:52.518819&#39;, 980190962)[0m
+[1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO &quot;users&quot; (&quot;nombre&quot;, &quot;apellido&quot;, &quot;email&quot;, &quot;activo&quot;, &quot;edad&quot;, &quot;detalles&quot;, &quot;created_at&quot;, &quot;updated_at&quot;, &quot;id&quot;) VALUES (&#39;MyString&#39;, &#39;MyString&#39;, &#39;MyString&#39;, &#39;f&#39;, 1, &#39;MyText&#39;, &#39;2016-10-09 02:24:52.518819&#39;, &#39;2016-10-09 02:24:52.518819&#39;, 298486374)[0m
+[1m[35m (304.5ms)[0m  [1m[36mcommit transaction[0m
+[1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m</code></pre>
+<hr>
+
+<p>PhonesControllerTest: test_should_get_new</p>
+<hr>
+
+<pre><code>[1m[36mPhone Load (0.7ms)[0m  [1m[34mSELECT  &quot;phones&quot;.* FROM &quot;phones&quot; WHERE &quot;phones&quot;.&quot;id&quot; = ? LIMIT ?[0m  [[&quot;id&quot;, 980190962], [&quot;LIMIT&quot;, 1]]</code></pre>
+
+<p>Started GET “/phones/new” for 127.0.0.1 at 2016-10-08 23:24:54 -0300
+Processing by <a
+href="../../../classes/PhonesController.html#method-i-new">PhonesController#new</a>
+as HTML</p>
+
+<pre><code>Rendering phones/new.html.erb within layouts/application
+Rendered phones/_form.html.erb (123.3ms)
+Rendered phones/new.html.erb within layouts/application (145.8ms)</code></pre>
+
+<p>Completed 200 OK in 273ms (Views: 204.7ms | ActiveRecord: 0.0ms)</p>
+
+<pre><code>[1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+[1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m</code></pre>
+<hr>
+
+<p>PhonesControllerTest: test_should_show_phone</p>
+<hr>
+
+<pre><code>[1m[36mPhone Load (0.4ms)[0m  [1m[34mSELECT  &quot;phones&quot;.* FROM &quot;phones&quot; WHERE &quot;phones&quot;.&quot;id&quot; = ? LIMIT ?[0m  [[&quot;id&quot;, 980190962], [&quot;LIMIT&quot;, 1]]</code></pre>
+
+<p>Started GET “/phones/980190962” for 127.0.0.1 at 2016-10-08 23:24:54 -0300
+Processing by <a
+href="../../../classes/PhonesController.html#method-i-show">PhonesController#show</a>
+as HTML</p>
+
+<pre><code>Parameters: {&quot;id&quot;=&gt;&quot;980190962&quot;}
+[1m[36mPhone Load (0.2ms)[0m  [1m[34mSELECT  &quot;phones&quot;.* FROM &quot;phones&quot; WHERE &quot;phones&quot;.&quot;id&quot; = ? LIMIT ?[0m  [[&quot;id&quot;, 980190962], [&quot;LIMIT&quot;, 1]]
+Rendering phones/show.html.erb within layouts/application
+Rendered phones/show.html.erb within layouts/application (2.4ms)</code></pre>
+
+<p>Completed 200 OK in 104ms (Views: 10.6ms | ActiveRecord: 0.2ms)</p>
+
+<pre><code>[1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+[1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m</code></pre>
+<hr>
+
+<p>PhonesControllerTest: test_should_create_phone</p>
+<hr>
+
+<pre><code>[1m[36mPhone Load (0.3ms)[0m  [1m[34mSELECT  &quot;phones&quot;.* FROM &quot;phones&quot; WHERE &quot;phones&quot;.&quot;id&quot; = ? LIMIT ?[0m  [[&quot;id&quot;, 980190962], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM &quot;phones&quot;[0m</code></pre>
+
+<p>Started POST “/phones” for 127.0.0.1 at 2016-10-08 23:24:55 -0300
+Processing by <a
+href="../../../classes/PhonesController.html#method-i-create">PhonesController#create</a>
+as HTML</p>
+
+<pre><code>Parameters: {&quot;phone&quot;=&gt;{&quot;telefono&quot;=&gt;&quot;MyString&quot;, &quot;type_id&quot;=&gt;&quot;1&quot;, &quot;user_id&quot;=&gt;&quot;1&quot;}}
+[1m[35m (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+[1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  &quot;users&quot;.* FROM &quot;users&quot; WHERE &quot;users&quot;.&quot;id&quot; = ? LIMIT ?[0m  [[&quot;id&quot;, 1], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+Rendering phones/new.html.erb within layouts/application
+Rendered phones/_form.html.erb (11.0ms)
+Rendered phones/new.html.erb within layouts/application (14.2ms)</code></pre>
+
+<p>Completed 200 OK in 105ms (Views: 22.8ms | ActiveRecord: 1.0ms)</p>
+
+<pre><code>[1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM &quot;phones&quot;[0m
+[1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+[1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m</code></pre>
+<hr>
+
+<p>PhonesControllerTest: test_should_destroy_phone</p>
+<hr>
+
+<pre><code>[1m[36mPhone Load (0.6ms)[0m  [1m[34mSELECT  &quot;phones&quot;.* FROM &quot;phones&quot; WHERE &quot;phones&quot;.&quot;id&quot; = ? LIMIT ?[0m  [[&quot;id&quot;, 980190962], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM &quot;phones&quot;[0m</code></pre>
+
+<p>Started DELETE “/phones/980190962” for 127.0.0.1 at 2016-10-08 23:24:55
+-0300 Processing by <a
+href="../../../classes/PhonesController.html#method-i-destroy">PhonesController#destroy</a>
+as HTML</p>
+
+<pre><code>Parameters: {&quot;id&quot;=&gt;&quot;980190962&quot;}
+[1m[36mPhone Load (0.4ms)[0m  [1m[34mSELECT  &quot;phones&quot;.* FROM &quot;phones&quot; WHERE &quot;phones&quot;.&quot;id&quot; = ? LIMIT ?[0m  [[&quot;id&quot;, 980190962], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+[1m[35mSQL (2.5ms)[0m  [1m[31mDELETE FROM &quot;phones&quot; WHERE &quot;phones&quot;.&quot;id&quot; = ?[0m  [[&quot;id&quot;, 980190962]]
+[1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m</code></pre>
+
+<p>Redirected to <a
+href="http://www.example.com/phones">www.example.com/phones</a> Completed
+302 Found in 12ms (ActiveRecord: 3.3ms)</p>
+
+<pre><code>[1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM &quot;phones&quot;[0m
+[1m[35m (3.2ms)[0m  [1m[31mrollback transaction[0m
+[1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m</code></pre>
+<hr>
+
+<p>PhonesControllerTest: test_should_get_edit</p>
+<hr>
+
+<pre><code>[1m[36mPhone Load (0.3ms)[0m  [1m[34mSELECT  &quot;phones&quot;.* FROM &quot;phones&quot; WHERE &quot;phones&quot;.&quot;id&quot; = ? LIMIT ?[0m  [[&quot;id&quot;, 980190962], [&quot;LIMIT&quot;, 1]]</code></pre>
+
+<p>Started GET “/phones/980190962/edit” for 127.0.0.1 at 2016-10-08 23:24:55
+-0300 Processing by <a
+href="../../../classes/PhonesController.html#method-i-edit">PhonesController#edit</a>
+as HTML</p>
+
+<pre><code>Parameters: {&quot;id&quot;=&gt;&quot;980190962&quot;}
+[1m[36mPhone Load (0.3ms)[0m  [1m[34mSELECT  &quot;phones&quot;.* FROM &quot;phones&quot; WHERE &quot;phones&quot;.&quot;id&quot; = ? LIMIT ?[0m  [[&quot;id&quot;, 980190962], [&quot;LIMIT&quot;, 1]]
+Rendering phones/edit.html.erb within layouts/application
+Rendered phones/_form.html.erb (11.7ms)
+Rendered phones/edit.html.erb within layouts/application (17.0ms)</code></pre>
+
+<p>Completed 200 OK in 92ms (Views: 26.0ms | ActiveRecord: 0.3ms)</p>
+
+<pre><code>[1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+[1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m</code></pre>
+<hr>
+
+<p>PhonesControllerTest: test_should_update_phone</p>
+<hr>
+
+<pre><code>[1m[36mPhone Load (0.3ms)[0m  [1m[34mSELECT  &quot;phones&quot;.* FROM &quot;phones&quot; WHERE &quot;phones&quot;.&quot;id&quot; = ? LIMIT ?[0m  [[&quot;id&quot;, 980190962], [&quot;LIMIT&quot;, 1]]</code></pre>
+
+<p>Started PATCH “/phones/980190962” for 127.0.0.1 at 2016-10-08 23:24:55
+-0300 Processing by <a
+href="../../../classes/PhonesController.html#method-i-update">PhonesController#update</a>
+as HTML</p>
+
+<pre><code>Parameters: {&quot;phone&quot;=&gt;{&quot;telefono&quot;=&gt;&quot;MyString&quot;, &quot;type_id&quot;=&gt;&quot;1&quot;, &quot;user_id&quot;=&gt;&quot;1&quot;}, &quot;id&quot;=&gt;&quot;980190962&quot;}
+[1m[36mPhone Load (0.3ms)[0m  [1m[34mSELECT  &quot;phones&quot;.* FROM &quot;phones&quot; WHERE &quot;phones&quot;.&quot;id&quot; = ? LIMIT ?[0m  [[&quot;id&quot;, 980190962], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+[1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  &quot;users&quot;.* FROM &quot;users&quot; WHERE &quot;users&quot;.&quot;id&quot; = ? LIMIT ?[0m  [[&quot;id&quot;, 1], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.3ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+Rendering phones/edit.html.erb within layouts/application
+Rendered phones/_form.html.erb (14.3ms)
+Rendered phones/edit.html.erb within layouts/application (19.2ms)</code></pre>
+
+<p>Completed 200 OK in 47ms (Views: 30.6ms | ActiveRecord: 1.0ms)</p>
+
+<pre><code>[1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+[1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m</code></pre>
+<hr>
+
+<p>PhonesControllerTest: test_should_get_index</p>
+<hr>
+
+<pre><code>[1m[36mPhone Load (0.2ms)[0m  [1m[34mSELECT  &quot;phones&quot;.* FROM &quot;phones&quot; WHERE &quot;phones&quot;.&quot;id&quot; = ? LIMIT ?[0m  [[&quot;id&quot;, 980190962], [&quot;LIMIT&quot;, 1]]</code></pre>
+
+<p>Started GET “/phones” for 127.0.0.1 at 2016-10-08 23:24:55 -0300 Processing
+by <a
+href="../../../classes/PhonesController.html#method-i-index">PhonesController#index</a>
+as HTML</p>
+
+<pre><code>Rendering phones/index.html.erb within layouts/application
+[1m[36mPhone Load (0.4ms)[0m  [1m[34mSELECT &quot;phones&quot;.* FROM &quot;phones&quot;[0m
+Rendered phones/index.html.erb within layouts/application (5.4ms)</code></pre>
+
+<p>Completed 200 OK in 15ms (Views: 11.1ms | ActiveRecord: 0.4ms)</p>
+
+<pre><code>[1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+[1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m</code></pre>
+<hr>
+
+<p>LandingControllerTest: test_should_get_adios</p>
+<hr>
+
+<p>Started GET “/landing/adios” for 127.0.0.1 at 2016-10-08 23:24:55 -0300
+Processing by <a
+href="../../../classes/LandingController.html#method-i-adios">LandingController#adios</a>
+as HTML</p>
+
+<pre><code>Rendering landing/adios.html.erb within layouts/application
+Rendered landing/adios.html.erb within layouts/application (1.0ms)</code></pre>
+
+<p>Completed 200 OK in 24ms (Views: 9.9ms | ActiveRecord: 0.0ms)</p>
+
+<pre><code>[1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+[1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m</code></pre>
+<hr>
+
+<p>LandingControllerTest: test_should_get_bienvenido</p>
+<hr>
+
+<p>Started GET “/landing/bienvenido” for 127.0.0.1 at 2016-10-08 23:24:55
+-0300 Processing by <a
+href="../../../classes/LandingController.html#method-i-bienvenido">LandingController#bienvenido</a>
+as HTML</p>
+
+<pre><code>Rendering landing/bienvenido.html.erb within layouts/application
+Rendered landing/bienvenido.html.erb within layouts/application (2564.6ms)</code></pre>
+
+<p>Completed 200 OK in 2580ms (Views: 2575.2ms | ActiveRecord: 0.0ms)</p>
+
+<pre><code>[1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+[1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m</code></pre>
+<hr>
+
+<p>TypesControllerTest: test_should_create_type</p>
+<hr>
+
+<pre><code>[1m[36mType Load (0.6ms)[0m  [1m[34mSELECT  &quot;types&quot;.* FROM &quot;types&quot; WHERE &quot;types&quot;.&quot;id&quot; = ? LIMIT ?[0m  [[&quot;id&quot;, 980190962], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM &quot;types&quot;[0m</code></pre>
+
+<p>Started POST “/types” for 127.0.0.1 at 2016-10-08 23:24:58 -0300 Processing
+by <a
+href="../../../classes/TypesController.html#method-i-create">TypesController#create</a>
+as HTML</p>
+
+<pre><code>Parameters: {&quot;type&quot;=&gt;{&quot;tipo&quot;=&gt;&quot;MyString&quot;}}
+[1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+[1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO &quot;types&quot; (&quot;tipo&quot;, &quot;created_at&quot;, &quot;updated_at&quot;) VALUES (?, ?, ?)[0m  [[&quot;tipo&quot;, &quot;MyString&quot;], [&quot;created_at&quot;, 2016-10-09 02:24:58 UTC], [&quot;updated_at&quot;, 2016-10-09 02:24:58 UTC]]
+[1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m</code></pre>
+
+<p>Redirected to <a
+href="http://www.example.com/types/980190963">www.example.com/types/980190963</a>
+Completed 302 Found in 18ms (ActiveRecord: 1.6ms)</p>
+
+<pre><code>[1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM &quot;types&quot;[0m
+[1m[36mType Load (0.5ms)[0m  [1m[34mSELECT  &quot;types&quot;.* FROM &quot;types&quot; ORDER BY &quot;types&quot;.&quot;id&quot; DESC LIMIT ?[0m  [[&quot;LIMIT&quot;, 1]]
+[1m[35m (0.6ms)[0m  [1m[31mrollback transaction[0m
+[1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m</code></pre>
+<hr>
+
+<p>TypesControllerTest: test_should_get_index</p>
+<hr>
+
+<pre><code>[1m[36mType Load (0.3ms)[0m  [1m[34mSELECT  &quot;types&quot;.* FROM &quot;types&quot; WHERE &quot;types&quot;.&quot;id&quot; = ? LIMIT ?[0m  [[&quot;id&quot;, 980190962], [&quot;LIMIT&quot;, 1]]</code></pre>
+
+<p>Started GET “/types” for 127.0.0.1 at 2016-10-08 23:24:58 -0300 Processing
+by <a
+href="../../../classes/TypesController.html#method-i-index">TypesController#index</a>
+as HTML</p>
+
+<pre><code>Rendering types/index.html.erb within layouts/application
+[1m[36mType Load (0.5ms)[0m  [1m[34mSELECT &quot;types&quot;.* FROM &quot;types&quot;[0m
+Rendered types/index.html.erb within layouts/application (9.7ms)</code></pre>
+
+<p>Completed 200 OK in 26ms (Views: 21.3ms | ActiveRecord: 0.5ms)</p>
+
+<pre><code>[1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+[1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m</code></pre>
+<hr>
+
+<p>TypesControllerTest: test_should_show_type</p>
+<hr>
+
+<pre><code>[1m[36mType Load (0.3ms)[0m  [1m[34mSELECT  &quot;types&quot;.* FROM &quot;types&quot; WHERE &quot;types&quot;.&quot;id&quot; = ? LIMIT ?[0m  [[&quot;id&quot;, 980190962], [&quot;LIMIT&quot;, 1]]</code></pre>
+
+<p>Started GET “/types/980190962” for 127.0.0.1 at 2016-10-08 23:24:58 -0300
+Processing by <a
+href="../../../classes/TypesController.html#method-i-show">TypesController#show</a>
+as HTML</p>
+
+<pre><code>Parameters: {&quot;id&quot;=&gt;&quot;980190962&quot;}
+[1m[36mType Load (0.3ms)[0m  [1m[34mSELECT  &quot;types&quot;.* FROM &quot;types&quot; WHERE &quot;types&quot;.&quot;id&quot; = ? LIMIT ?[0m  [[&quot;id&quot;, 980190962], [&quot;LIMIT&quot;, 1]]
+Rendering types/show.html.erb within layouts/application
+Rendered types/show.html.erb within layouts/application (2.4ms)</code></pre>
+
+<p>Completed 200 OK in 46ms (Views: 9.3ms | ActiveRecord: 0.3ms)</p>
+
+<pre><code>[1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+[1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m</code></pre>
+<hr>
+
+<p>TypesControllerTest: test_should_update_type</p>
+<hr>
+
+<pre><code>[1m[36mType Load (0.3ms)[0m  [1m[34mSELECT  &quot;types&quot;.* FROM &quot;types&quot; WHERE &quot;types&quot;.&quot;id&quot; = ? LIMIT ?[0m  [[&quot;id&quot;, 980190962], [&quot;LIMIT&quot;, 1]]</code></pre>
+
+<p>Started PATCH “/types/980190962” for 127.0.0.1 at 2016-10-08 23:24:58 -0300
+Processing by <a
+href="../../../classes/TypesController.html#method-i-update">TypesController#update</a>
+as HTML</p>
+
+<pre><code>Parameters: {&quot;type&quot;=&gt;{&quot;tipo&quot;=&gt;&quot;MyString&quot;}, &quot;id&quot;=&gt;&quot;980190962&quot;}
+[1m[36mType Load (0.3ms)[0m  [1m[34mSELECT  &quot;types&quot;.* FROM &quot;types&quot; WHERE &quot;types&quot;.&quot;id&quot; = ? LIMIT ?[0m  [[&quot;id&quot;, 980190962], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+[1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m</code></pre>
+
+<p>Redirected to <a
+href="http://www.example.com/types/980190962">www.example.com/types/980190962</a>
+Completed 302 Found in 8ms (ActiveRecord: 0.6ms)</p>
+
+<pre><code>[1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+[1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m</code></pre>
+<hr>
+
+<p>TypesControllerTest: test_should_get_edit</p>
+<hr>
+
+<pre><code>[1m[36mType Load (1.2ms)[0m  [1m[34mSELECT  &quot;types&quot;.* FROM &quot;types&quot; WHERE &quot;types&quot;.&quot;id&quot; = ? LIMIT ?[0m  [[&quot;id&quot;, 980190962], [&quot;LIMIT&quot;, 1]]</code></pre>
+
+<p>Started GET “/types/980190962/edit” for 127.0.0.1 at 2016-10-08 23:24:58
+-0300 Processing by <a
+href="../../../classes/TypesController.html#method-i-edit">TypesController#edit</a>
+as HTML</p>
+
+<pre><code>Parameters: {&quot;id&quot;=&gt;&quot;980190962&quot;}
+[1m[36mType Load (0.3ms)[0m  [1m[34mSELECT  &quot;types&quot;.* FROM &quot;types&quot; WHERE &quot;types&quot;.&quot;id&quot; = ? LIMIT ?[0m  [[&quot;id&quot;, 980190962], [&quot;LIMIT&quot;, 1]]
+Rendering types/edit.html.erb within layouts/application
+Rendered types/_form.html.erb (10.8ms)
+Rendered types/edit.html.erb within layouts/application (16.7ms)</code></pre>
+
+<p>Completed 200 OK in 92ms (Views: 86.7ms | ActiveRecord: 0.3ms)</p>
+
+<pre><code>[1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+[1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m</code></pre>
+<hr>
+
+<p>TypesControllerTest: test_should_get_new</p>
+<hr>
+
+<pre><code>[1m[36mType Load (0.3ms)[0m  [1m[34mSELECT  &quot;types&quot;.* FROM &quot;types&quot; WHERE &quot;types&quot;.&quot;id&quot; = ? LIMIT ?[0m  [[&quot;id&quot;, 980190962], [&quot;LIMIT&quot;, 1]]</code></pre>
+
+<p>Started GET “/types/new” for 127.0.0.1 at 2016-10-08 23:24:58 -0300
+Processing by <a
+href="../../../classes/TypesController.html#method-i-new">TypesController#new</a>
+as HTML</p>
+
+<pre><code>Rendering types/new.html.erb within layouts/application
+Rendered types/_form.html.erb (5.8ms)
+Rendered types/new.html.erb within layouts/application (10.3ms)</code></pre>
+
+<p>Completed 200 OK in 22ms (Views: 18.3ms | ActiveRecord: 0.0ms)</p>
+
+<pre><code>[1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+[1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m</code></pre>
+<hr>
+
+<p>TypesControllerTest: test_should_destroy_type</p>
+<hr>
+
+<pre><code>[1m[36mType Load (0.2ms)[0m  [1m[34mSELECT  &quot;types&quot;.* FROM &quot;types&quot; WHERE &quot;types&quot;.&quot;id&quot; = ? LIMIT ?[0m  [[&quot;id&quot;, 980190962], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM &quot;types&quot;[0m</code></pre>
+
+<p>Started DELETE “/types/980190962” for 127.0.0.1 at 2016-10-08 23:24:58
+-0300 Processing by <a
+href="../../../classes/TypesController.html#method-i-destroy">TypesController#destroy</a>
+as HTML</p>
+
+<pre><code>Parameters: {&quot;id&quot;=&gt;&quot;980190962&quot;}
+[1m[36mType Load (0.4ms)[0m  [1m[34mSELECT  &quot;types&quot;.* FROM &quot;types&quot; WHERE &quot;types&quot;.&quot;id&quot; = ? LIMIT ?[0m  [[&quot;id&quot;, 980190962], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+[1m[35mSQL (0.6ms)[0m  [1m[31mDELETE FROM &quot;types&quot; WHERE &quot;types&quot;.&quot;id&quot; = ?[0m  [[&quot;id&quot;, 980190962]]
+[1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m</code></pre>
+
+<p>Redirected to <a
+href="http://www.example.com/types">www.example.com/types</a> Completed 302
+Found in 7ms (ActiveRecord: 1.3ms)</p>
+
+<pre><code>[1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM &quot;types&quot;[0m
+[1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+[1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m</code></pre>
+<hr>
+
+<p>UsersControllerTest: test_should_create_user</p>
+<hr>
+
+<pre><code>[1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  &quot;users&quot;.* FROM &quot;users&quot; WHERE &quot;users&quot;.&quot;id&quot; = ? LIMIT ?[0m  [[&quot;id&quot;, 980190962], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM &quot;users&quot;[0m</code></pre>
+
+<p>Started POST “/users” for 127.0.0.1 at 2016-10-08 23:24:58 -0300 Processing
+by <a
+href="../../../classes/UsersController.html#method-i-create">UsersController#create</a>
+as HTML</p>
+
+<pre><code>Parameters: {&quot;user&quot;=&gt;{&quot;activo&quot;=&gt;&quot;false&quot;, &quot;apellido&quot;=&gt;&quot;MyString&quot;, &quot;detalles&quot;=&gt;&quot;MyText&quot;, &quot;edad&quot;=&gt;&quot;1&quot;, &quot;email&quot;=&gt;&quot;MyString&quot;, &quot;nombre&quot;=&gt;&quot;MyString&quot;}}
+[1m[35m (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+[1m[35mSQL (5.6ms)[0m  [1m[32mINSERT INTO &quot;users&quot; (&quot;nombre&quot;, &quot;apellido&quot;, &quot;email&quot;, &quot;activo&quot;, &quot;edad&quot;, &quot;detalles&quot;, &quot;created_at&quot;, &quot;updated_at&quot;) VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [[&quot;nombre&quot;, &quot;MyString&quot;], [&quot;apellido&quot;, &quot;MyString&quot;], [&quot;email&quot;, &quot;MyString&quot;], [&quot;activo&quot;, false], [&quot;edad&quot;, 1], [&quot;detalles&quot;, &quot;MyText&quot;], [&quot;created_at&quot;, 2016-10-09 02:25:46 UTC], [&quot;updated_at&quot;, 2016-10-09 02:25:46 UTC]]
+[1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m</code></pre>
+
+<p>Redirected to <a
+href="http://www.example.com/users/980190963">www.example.com/users/980190963</a>
+Completed 302 Found in 47661ms (ActiveRecord: 6.3ms)</p>
+
+<pre><code>[1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM &quot;users&quot;[0m
+[1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  &quot;users&quot;.* FROM &quot;users&quot; ORDER BY &quot;users&quot;.&quot;id&quot; DESC LIMIT ?[0m  [[&quot;LIMIT&quot;, 1]]
+[1m[35m (0.6ms)[0m  [1m[31mrollback transaction[0m
+[1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m</code></pre>
+<hr>
+
+<p>UsersControllerTest: test_should_show_user</p>
+<hr>
+
+<pre><code>[1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  &quot;users&quot;.* FROM &quot;users&quot; WHERE &quot;users&quot;.&quot;id&quot; = ? LIMIT ?[0m  [[&quot;id&quot;, 980190962], [&quot;LIMIT&quot;, 1]]</code></pre>
+
+<p>Started GET “/users/980190962” for 127.0.0.1 at 2016-10-08 23:25:46 -0300
+Processing by <a
+href="../../../classes/UsersController.html#method-i-show">UsersController#show</a>
+as HTML</p>
+
+<pre><code>Parameters: {&quot;id&quot;=&gt;&quot;980190962&quot;}
+[1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  &quot;users&quot;.* FROM &quot;users&quot; WHERE &quot;users&quot;.&quot;id&quot; = ? LIMIT ?[0m  [[&quot;id&quot;, 980190962], [&quot;LIMIT&quot;, 1]]
+Rendering users/show.html.erb within layouts/application
+[1m[36mPhone Load (0.5ms)[0m  [1m[34mSELECT &quot;phones&quot;.* FROM &quot;phones&quot; WHERE &quot;phones&quot;.&quot;user_id&quot; = ?[0m  [[&quot;user_id&quot;, 980190962]]
+Rendered users/show.html.erb within layouts/application (42.4ms)</code></pre>
+
+<p>Completed 200 OK in 144ms (Views: 49.5ms | ActiveRecord: 0.8ms)</p>
+
+<pre><code>[1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+[1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m</code></pre>
+<hr>
+
+<p>UsersControllerTest: test_should_update_user</p>
+<hr>
+
+<pre><code>[1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  &quot;users&quot;.* FROM &quot;users&quot; WHERE &quot;users&quot;.&quot;id&quot; = ? LIMIT ?[0m  [[&quot;id&quot;, 980190962], [&quot;LIMIT&quot;, 1]]</code></pre>
+
+<p>Started PATCH “/users/980190962” for 127.0.0.1 at 2016-10-08 23:25:46 -0300
+Processing by <a
+href="../../../classes/UsersController.html#method-i-update">UsersController#update</a>
+as HTML</p>
+
+<pre><code>Parameters: {&quot;user&quot;=&gt;{&quot;activo&quot;=&gt;&quot;false&quot;, &quot;apellido&quot;=&gt;&quot;MyString&quot;, &quot;detalles&quot;=&gt;&quot;MyText&quot;, &quot;edad&quot;=&gt;&quot;1&quot;, &quot;email&quot;=&gt;&quot;MyString&quot;, &quot;nombre&quot;=&gt;&quot;MyString&quot;}, &quot;id&quot;=&gt;&quot;980190962&quot;}
+[1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  &quot;users&quot;.* FROM &quot;users&quot; WHERE &quot;users&quot;.&quot;id&quot; = ? LIMIT ?[0m  [[&quot;id&quot;, 980190962], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+[1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m</code></pre>
+
+<p>Redirected to <a
+href="http://www.example.com/users/980190962">www.example.com/users/980190962</a>
+Completed 302 Found in 10ms (ActiveRecord: 0.8ms)</p>
+
+<pre><code>[1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+[1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m</code></pre>
+<hr>
+
+<p>UsersControllerTest: test_should_get_new</p>
+<hr>
+
+<pre><code>[1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  &quot;users&quot;.* FROM &quot;users&quot; WHERE &quot;users&quot;.&quot;id&quot; = ? LIMIT ?[0m  [[&quot;id&quot;, 980190962], [&quot;LIMIT&quot;, 1]]</code></pre>
+
+<p>Started GET “/users/new” for 127.0.0.1 at 2016-10-08 23:25:46 -0300
+Processing by <a
+href="../../../classes/UsersController.html#method-i-new">UsersController#new</a>
+as HTML</p>
+
+<pre><code>Rendering users/new.html.erb within layouts/application
+Rendered users/_form.html.erb (123.9ms)
+Rendered users/new.html.erb within layouts/application (224.5ms)</code></pre>
+
+<p>Completed 200 OK in 521ms (Views: 232.6ms | ActiveRecord: 0.0ms)</p>
+
+<pre><code>[1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+[1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m</code></pre>
+<hr>
+
+<p>UsersControllerTest: test_should_get_index</p>
+<hr>
+
+<pre><code>[1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  &quot;users&quot;.* FROM &quot;users&quot; WHERE &quot;users&quot;.&quot;id&quot; = ? LIMIT ?[0m  [[&quot;id&quot;, 980190962], [&quot;LIMIT&quot;, 1]]</code></pre>
+
+<p>Started GET “/users” for 127.0.0.1 at 2016-10-08 23:25:46 -0300 Processing
+by <a
+href="../../../classes/UsersController.html#method-i-index">UsersController#index</a>
+as HTML</p>
+
+<pre><code>Rendering users/index.html.erb within layouts/application
+[1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT &quot;users&quot;.* FROM &quot;users&quot;[0m
+Rendered users/index.html.erb within layouts/application (6.6ms)</code></pre>
+
+<p>Completed 200 OK in 304ms (Views: 12.9ms | ActiveRecord: 0.4ms)</p>
+
+<pre><code>[1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+[1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m</code></pre>
+<hr>
+
+<p>UsersControllerTest: test_should_destroy_user</p>
+<hr>
+
+<pre><code>[1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  &quot;users&quot;.* FROM &quot;users&quot; WHERE &quot;users&quot;.&quot;id&quot; = ? LIMIT ?[0m  [[&quot;id&quot;, 980190962], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM &quot;users&quot;[0m</code></pre>
+
+<p>Started DELETE “/users/980190962” for 127.0.0.1 at 2016-10-08 23:25:47
+-0300 Processing by <a
+href="../../../classes/UsersController.html#method-i-destroy">UsersController#destroy</a>
+as HTML</p>
+
+<pre><code>Parameters: {&quot;id&quot;=&gt;&quot;980190962&quot;}
+[1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  &quot;users&quot;.* FROM &quot;users&quot; WHERE &quot;users&quot;.&quot;id&quot; = ? LIMIT ?[0m  [[&quot;id&quot;, 980190962], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+[1m[36mPhone Load (0.4ms)[0m  [1m[34mSELECT &quot;phones&quot;.* FROM &quot;phones&quot; WHERE &quot;phones&quot;.&quot;user_id&quot; = ?[0m  [[&quot;user_id&quot;, 980190962]]
+[1m[35mSQL (3.9ms)[0m  [1m[31mDELETE FROM &quot;users&quot; WHERE &quot;users&quot;.&quot;id&quot; = ?[0m  [[&quot;id&quot;, 980190962]]
+[1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m</code></pre>
+
+<p>Redirected to <a
+href="http://www.example.com/users">www.example.com/users</a> Completed 302
+Found in 19ms (ActiveRecord: 5.1ms)</p>
+
+<pre><code>[1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM &quot;users&quot;[0m
+[1m[35m (0.6ms)[0m  [1m[31mrollback transaction[0m
+[1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m</code></pre>
+<hr>
+
+<p>UsersControllerTest: test_should_get_edit</p>
+<hr>
+
+<pre><code>[1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  &quot;users&quot;.* FROM &quot;users&quot; WHERE &quot;users&quot;.&quot;id&quot; = ? LIMIT ?[0m  [[&quot;id&quot;, 980190962], [&quot;LIMIT&quot;, 1]]</code></pre>
+
+<p>Started GET “/users/980190962/edit” for 127.0.0.1 at 2016-10-08 23:25:47
+-0300 Processing by <a
+href="../../../classes/UsersController.html#method-i-edit">UsersController#edit</a>
+as HTML</p>
+
+<pre><code>Parameters: {&quot;id&quot;=&gt;&quot;980190962&quot;}
+[1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  &quot;users&quot;.* FROM &quot;users&quot; WHERE &quot;users&quot;.&quot;id&quot; = ? LIMIT ?[0m  [[&quot;id&quot;, 980190962], [&quot;LIMIT&quot;, 1]]
+Rendering users/edit.html.erb within layouts/application
+Rendered users/_form.html.erb (16.8ms)
+Rendered users/edit.html.erb within layouts/application (21.8ms)</code></pre>
+
+<p>Completed 200 OK in 33ms (Views: 28.1ms | ActiveRecord: 0.2ms)</p>
+
+<pre><code>[1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+[1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.* FROM &quot;schema_migrations&quot;[0m
+[1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+[1m[36mFixture Delete (1.7ms)[0m  [1m[31mDELETE FROM &quot;types&quot;[0m
+[1m[36mFixture Insert (0.3ms)[0m  [1m[32mINSERT INTO &quot;types&quot; (&quot;tipo&quot;, &quot;created_at&quot;, &quot;updated_at&quot;, &quot;id&quot;) VALUES (&#39;MyString&#39;, &#39;2016-10-10 14:24:24.335744&#39;, &#39;2016-10-10 14:24:24.335744&#39;, 980190962)[0m
+[1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO &quot;types&quot; (&quot;tipo&quot;, &quot;created_at&quot;, &quot;updated_at&quot;, &quot;id&quot;) VALUES (&#39;MyString&#39;, &#39;2016-10-10 14:24:24.335744&#39;, &#39;2016-10-10 14:24:24.335744&#39;, 298486374)[0m
+[1m[36mFixture Delete (0.2ms)[0m  [1m[31mDELETE FROM &quot;users&quot;[0m
+[1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO &quot;users&quot; (&quot;nombre&quot;, &quot;apellido&quot;, &quot;email&quot;, &quot;activo&quot;, &quot;edad&quot;, &quot;detalles&quot;, &quot;created_at&quot;, &quot;updated_at&quot;, &quot;id&quot;) VALUES (&#39;MyString&#39;, &#39;MyString&#39;, &#39;MyString&#39;, &#39;f&#39;, 1, &#39;MyText&#39;, &#39;2016-10-10 14:24:24.346054&#39;, &#39;2016-10-10 14:24:24.346054&#39;, 980190962)[0m
+[1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO &quot;users&quot; (&quot;nombre&quot;, &quot;apellido&quot;, &quot;email&quot;, &quot;activo&quot;, &quot;edad&quot;, &quot;detalles&quot;, &quot;created_at&quot;, &quot;updated_at&quot;, &quot;id&quot;) VALUES (&#39;MyString&#39;, &#39;MyString&#39;, &#39;MyString&#39;, &#39;f&#39;, 1, &#39;MyText&#39;, &#39;2016-10-10 14:24:24.346054&#39;, &#39;2016-10-10 14:24:24.346054&#39;, 298486374)[0m
+[1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM &quot;phones&quot;[0m
+[1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO &quot;phones&quot; (&quot;telefono&quot;, &quot;type_id&quot;, &quot;user_id&quot;, &quot;created_at&quot;, &quot;updated_at&quot;, &quot;id&quot;) VALUES (&#39;MyString&#39;, 1, 1, &#39;2016-10-10 14:24:24.351271&#39;, &#39;2016-10-10 14:24:24.351271&#39;, 980190962)[0m
+[1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO &quot;phones&quot; (&quot;telefono&quot;, &quot;type_id&quot;, &quot;user_id&quot;, &quot;created_at&quot;, &quot;updated_at&quot;, &quot;id&quot;) VALUES (&#39;MyString&#39;, 1, 1, &#39;2016-10-10 14:24:24.351271&#39;, &#39;2016-10-10 14:24:24.351271&#39;, 298486374)[0m
+[1m[35m (297.3ms)[0m  [1m[36mcommit transaction[0m
+[1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m</code></pre>
+<hr>
+
+<p>LandingControllerTest: test_should_get_adios</p>
+<hr>
+
+<p>Started GET “/landing/adios” for 127.0.0.1 at 2016-10-10 11:24:25 -0300
+Processing by <a
+href="../../../classes/LandingController.html#method-i-adios">LandingController#adios</a>
+as HTML</p>
+
+<pre><code>Rendering landing/adios.html.erb within layouts/application
+Rendered landing/adios.html.erb within layouts/application (1.9ms)</code></pre>
+
+<p>Completed 200 OK in 25ms (Views: 12.8ms | ActiveRecord: 0.0ms)</p>
+
+<pre><code>[1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+[1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m</code></pre>
+<hr>
+
+<p>LandingControllerTest: test_should_get_bienvenido</p>
+<hr>
+
+<p>Started GET “/landing/bienvenido” for 127.0.0.1 at 2016-10-10 11:24:25
+-0300 Processing by <a
+href="../../../classes/LandingController.html#method-i-bienvenido">LandingController#bienvenido</a>
+as HTML</p>
+
+<pre><code>Rendering landing/bienvenido.html.erb within layouts/application
+Rendered landing/bienvenido.html.erb within layouts/application (702.2ms)</code></pre>
+
+<p>Completed 200 OK in 708ms (Views: 706.5ms | ActiveRecord: 0.0ms)</p>
+
+<pre><code>[1m[35m (14.1ms)[0m  [1m[31mrollback transaction[0m
+[1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m</code></pre>
+<hr>
+
+<p>PhonesControllerTest: test_should_get_new</p>
+<hr>
+
+<pre><code>[1m[36mPhone Load (0.4ms)[0m  [1m[34mSELECT  &quot;phones&quot;.* FROM &quot;phones&quot; WHERE &quot;phones&quot;.&quot;id&quot; = ? LIMIT ?[0m  [[&quot;id&quot;, 980190962], [&quot;LIMIT&quot;, 1]]</code></pre>
+
+<p>Started GET “/phones/new” for 127.0.0.1 at 2016-10-10 11:24:26 -0300
+Processing by <a
+href="../../../classes/PhonesController.html#method-i-new">PhonesController#new</a>
+as HTML</p>
+
+<pre><code>Rendering phones/new.html.erb within layouts/application
+Rendered phones/_form.html.erb (21.4ms)
+Rendered phones/new.html.erb within layouts/application (24.2ms)</code></pre>
+
+<p>Completed 200 OK in 31ms (Views: 28.7ms | ActiveRecord: 0.0ms)</p>
+
+<pre><code>[1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+[1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m</code></pre>
+<hr>
+
+<p>PhonesControllerTest: test_should_update_phone</p>
+<hr>
+
+<pre><code>[1m[36mPhone Load (0.2ms)[0m  [1m[34mSELECT  &quot;phones&quot;.* FROM &quot;phones&quot; WHERE &quot;phones&quot;.&quot;id&quot; = ? LIMIT ?[0m  [[&quot;id&quot;, 980190962], [&quot;LIMIT&quot;, 1]]</code></pre>
+
+<p>Started PATCH “/phones/980190962” for 127.0.0.1 at 2016-10-10 11:24:26
+-0300 Processing by <a
+href="../../../classes/PhonesController.html#method-i-update">PhonesController#update</a>
+as HTML</p>
+
+<pre><code>Parameters: {&quot;phone&quot;=&gt;{&quot;telefono&quot;=&gt;&quot;MyString&quot;, &quot;type_id&quot;=&gt;&quot;1&quot;, &quot;user_id&quot;=&gt;&quot;1&quot;}, &quot;id&quot;=&gt;&quot;980190962&quot;}
+[1m[36mPhone Load (0.1ms)[0m  [1m[34mSELECT  &quot;phones&quot;.* FROM &quot;phones&quot; WHERE &quot;phones&quot;.&quot;id&quot; = ? LIMIT ?[0m  [[&quot;id&quot;, 980190962], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+[1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  &quot;users&quot;.* FROM &quot;users&quot; WHERE &quot;users&quot;.&quot;id&quot; = ? LIMIT ?[0m  [[&quot;id&quot;, 1], [&quot;LIMIT&quot;, 1]]
+[1m[36mType Load (0.2ms)[0m  [1m[34mSELECT  &quot;types&quot;.* FROM &quot;types&quot; WHERE &quot;types&quot;.&quot;id&quot; = ? LIMIT ?[0m  [[&quot;id&quot;, 1], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+Rendering phones/edit.html.erb within layouts/application
+Rendered phones/_form.html.erb (6.8ms)
+Rendered phones/edit.html.erb within layouts/application (9.8ms)</code></pre>
+
+<p>Completed 200 OK in 46ms (Views: 15.9ms | ActiveRecord: 0.8ms)</p>
+
+<pre><code>[1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+[1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m</code></pre>
+<hr>
+
+<p>PhonesControllerTest: test_should_show_phone</p>
+<hr>
+
+<pre><code>[1m[36mPhone Load (0.2ms)[0m  [1m[34mSELECT  &quot;phones&quot;.* FROM &quot;phones&quot; WHERE &quot;phones&quot;.&quot;id&quot; = ? LIMIT ?[0m  [[&quot;id&quot;, 980190962], [&quot;LIMIT&quot;, 1]]</code></pre>
+
+<p>Started GET “/phones/980190962” for 127.0.0.1 at 2016-10-10 11:24:26 -0300
+Processing by <a
+href="../../../classes/PhonesController.html#method-i-show">PhonesController#show</a>
+as HTML</p>
+
+<pre><code>Parameters: {&quot;id&quot;=&gt;&quot;980190962&quot;}
+[1m[36mPhone Load (0.1ms)[0m  [1m[34mSELECT  &quot;phones&quot;.* FROM &quot;phones&quot; WHERE &quot;phones&quot;.&quot;id&quot; = ? LIMIT ?[0m  [[&quot;id&quot;, 980190962], [&quot;LIMIT&quot;, 1]]
+Rendering phones/show.html.erb within layouts/application
+Rendered phones/show.html.erb within layouts/application (1.9ms)</code></pre>
+
+<p>Completed 200 OK in 9ms (Views: 5.9ms | ActiveRecord: 0.1ms)</p>
+
+<pre><code>[1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+[1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m</code></pre>
+<hr>
+
+<p>PhonesControllerTest: test_should_create_phone</p>
+<hr>
+
+<pre><code>[1m[36mPhone Load (0.1ms)[0m  [1m[34mSELECT  &quot;phones&quot;.* FROM &quot;phones&quot; WHERE &quot;phones&quot;.&quot;id&quot; = ? LIMIT ?[0m  [[&quot;id&quot;, 980190962], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM &quot;phones&quot;[0m</code></pre>
+
+<p>Started POST “/phones” for 127.0.0.1 at 2016-10-10 11:24:26 -0300
+Processing by <a
+href="../../../classes/PhonesController.html#method-i-create">PhonesController#create</a>
+as HTML</p>
+
+<pre><code>Parameters: {&quot;phone&quot;=&gt;{&quot;telefono&quot;=&gt;&quot;MyString&quot;, &quot;type_id&quot;=&gt;&quot;1&quot;, &quot;user_id&quot;=&gt;&quot;1&quot;}}
+[1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+[1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  &quot;users&quot;.* FROM &quot;users&quot; WHERE &quot;users&quot;.&quot;id&quot; = ? LIMIT ?[0m  [[&quot;id&quot;, 1], [&quot;LIMIT&quot;, 1]]
+[1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  &quot;types&quot;.* FROM &quot;types&quot; WHERE &quot;types&quot;.&quot;id&quot; = ? LIMIT ?[0m  [[&quot;id&quot;, 1], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+Rendering phones/new.html.erb within layouts/application
+Rendered phones/_form.html.erb (3.5ms)
+Rendered phones/new.html.erb within layouts/application (4.8ms)</code></pre>
+
+<p>Completed 200 OK in 14ms (Views: 7.8ms | ActiveRecord: 0.5ms)</p>
+
+<pre><code>[1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM &quot;phones&quot;[0m
+[1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+[1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m</code></pre>
+<hr>
+
+<p>PhonesControllerTest: test_should_destroy_phone</p>
+<hr>
+
+<pre><code>[1m[36mPhone Load (0.1ms)[0m  [1m[34mSELECT  &quot;phones&quot;.* FROM &quot;phones&quot; WHERE &quot;phones&quot;.&quot;id&quot; = ? LIMIT ?[0m  [[&quot;id&quot;, 980190962], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM &quot;phones&quot;[0m</code></pre>
+
+<p>Started DELETE “/phones/980190962” for 127.0.0.1 at 2016-10-10 11:24:26
+-0300 Processing by <a
+href="../../../classes/PhonesController.html#method-i-destroy">PhonesController#destroy</a>
+as HTML</p>
+
+<pre><code>Parameters: {&quot;id&quot;=&gt;&quot;980190962&quot;}
+[1m[36mPhone Load (0.2ms)[0m  [1m[34mSELECT  &quot;phones&quot;.* FROM &quot;phones&quot; WHERE &quot;phones&quot;.&quot;id&quot; = ? LIMIT ?[0m  [[&quot;id&quot;, 980190962], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+[1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM &quot;phones&quot; WHERE &quot;phones&quot;.&quot;id&quot; = ?[0m  [[&quot;id&quot;, 980190962]]
+[1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m</code></pre>
+
+<p>Redirected to <a
+href="http://www.example.com/phones">www.example.com/phones</a> Completed
+302 Found in 3ms (ActiveRecord: 0.6ms)</p>
+
+<pre><code>[1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM &quot;phones&quot;[0m
+[1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+[1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m</code></pre>
+<hr>
+
+<p>PhonesControllerTest: test_should_get_index</p>
+<hr>
+
+<pre><code>[1m[36mPhone Load (0.1ms)[0m  [1m[34mSELECT  &quot;phones&quot;.* FROM &quot;phones&quot; WHERE &quot;phones&quot;.&quot;id&quot; = ? LIMIT ?[0m  [[&quot;id&quot;, 980190962], [&quot;LIMIT&quot;, 1]]</code></pre>
+
+<p>Started GET “/phones” for 127.0.0.1 at 2016-10-10 11:24:26 -0300 Processing
+by <a
+href="../../../classes/PhonesController.html#method-i-index">PhonesController#index</a>
+as HTML</p>
+
+<pre><code>Rendering phones/index.html.erb within layouts/application
+[1m[36mPhone Load (0.2ms)[0m  [1m[34mSELECT &quot;phones&quot;.* FROM &quot;phones&quot;[0m
+Rendered phones/index.html.erb within layouts/application (2.3ms)</code></pre>
+
+<p>Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 0.2ms)</p>
+
+<pre><code>[1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+[1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m</code></pre>
+<hr>
+
+<p>PhonesControllerTest: test_should_get_edit</p>
+<hr>
+
+<pre><code>[1m[36mPhone Load (0.1ms)[0m  [1m[34mSELECT  &quot;phones&quot;.* FROM &quot;phones&quot; WHERE &quot;phones&quot;.&quot;id&quot; = ? LIMIT ?[0m  [[&quot;id&quot;, 980190962], [&quot;LIMIT&quot;, 1]]</code></pre>
+
+<p>Started GET “/phones/980190962/edit” for 127.0.0.1 at 2016-10-10 11:24:26
+-0300 Processing by <a
+href="../../../classes/PhonesController.html#method-i-edit">PhonesController#edit</a>
+as HTML</p>
+
+<pre><code>Parameters: {&quot;id&quot;=&gt;&quot;980190962&quot;}
+[1m[36mPhone Load (0.1ms)[0m  [1m[34mSELECT  &quot;phones&quot;.* FROM &quot;phones&quot; WHERE &quot;phones&quot;.&quot;id&quot; = ? LIMIT ?[0m  [[&quot;id&quot;, 980190962], [&quot;LIMIT&quot;, 1]]
+Rendering phones/edit.html.erb within layouts/application
+Rendered phones/_form.html.erb (3.8ms)
+Rendered phones/edit.html.erb within layouts/application (5.4ms)</code></pre>
+
+<p>Completed 200 OK in 10ms (Views: 8.3ms | ActiveRecord: 0.1ms)</p>
+
+<pre><code>[1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+[1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m</code></pre>
+<hr>
+
+<p>UsersControllerTest: test_should_get_index</p>
+<hr>
+
+<pre><code>[1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  &quot;users&quot;.* FROM &quot;users&quot; WHERE &quot;users&quot;.&quot;id&quot; = ? LIMIT ?[0m  [[&quot;id&quot;, 980190962], [&quot;LIMIT&quot;, 1]]</code></pre>
+
+<p>Started GET “/users” for 127.0.0.1 at 2016-10-10 11:24:26 -0300 Processing
+by <a
+href="../../../classes/UsersController.html#method-i-index">UsersController#index</a>
+as HTML</p>
+
+<pre><code>Rendering users/index.html.erb within layouts/application
+[1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT &quot;users&quot;.* FROM &quot;users&quot;[0m
+Rendered users/index.html.erb within layouts/application (3.4ms)</code></pre>
+
+<p>Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.2ms)</p>
+
+<pre><code>[1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+[1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m</code></pre>
+<hr>
+
+<p>UsersControllerTest: test_should_get_new</p>
+<hr>
+
+<pre><code>[1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  &quot;users&quot;.* FROM &quot;users&quot; WHERE &quot;users&quot;.&quot;id&quot; = ? LIMIT ?[0m  [[&quot;id&quot;, 980190962], [&quot;LIMIT&quot;, 1]]</code></pre>
+
+<p>Started GET “/users/new” for 127.0.0.1 at 2016-10-10 11:24:26 -0300
+Processing by <a
+href="../../../classes/UsersController.html#method-i-new">UsersController#new</a>
+as HTML</p>
+
+<pre><code>Rendering users/new.html.erb within layouts/application
+Rendered users/_form.html.erb (8.0ms)
+Rendered users/new.html.erb within layouts/application (9.6ms)</code></pre>
+
+<p>Completed 200 OK in 14ms (Views: 12.5ms | ActiveRecord: 0.0ms)</p>
+
+<pre><code>[1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+[1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m</code></pre>
+<hr>
+
+<p>UsersControllerTest: test_should_destroy_user</p>
+<hr>
+
+<pre><code>[1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  &quot;users&quot;.* FROM &quot;users&quot; WHERE &quot;users&quot;.&quot;id&quot; = ? LIMIT ?[0m  [[&quot;id&quot;, 980190962], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM &quot;users&quot;[0m</code></pre>
+
+<p>Started DELETE “/users/980190962” for 127.0.0.1 at 2016-10-10 11:24:26
+-0300 Processing by <a
+href="../../../classes/UsersController.html#method-i-destroy">UsersController#destroy</a>
+as HTML</p>
+
+<pre><code>Parameters: {&quot;id&quot;=&gt;&quot;980190962&quot;}
+[1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  &quot;users&quot;.* FROM &quot;users&quot; WHERE &quot;users&quot;.&quot;id&quot; = ? LIMIT ?[0m  [[&quot;id&quot;, 980190962], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+[1m[36mPhone Load (0.2ms)[0m  [1m[34mSELECT &quot;phones&quot;.* FROM &quot;phones&quot; WHERE &quot;phones&quot;.&quot;user_id&quot; = ?[0m  [[&quot;user_id&quot;, 980190962]]
+[1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM &quot;users&quot; WHERE &quot;users&quot;.&quot;id&quot; = ?[0m  [[&quot;id&quot;, 980190962]]
+[1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m</code></pre>
+
+<p>Redirected to <a
+href="http://www.example.com/users">www.example.com/users</a> Completed 302
+Found in 12ms (ActiveRecord: 0.7ms)</p>
+
+<pre><code>[1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM &quot;users&quot;[0m
+[1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+[1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m</code></pre>
+<hr>
+
+<p>UsersControllerTest: test_should_get_edit</p>
+<hr>
+
+<pre><code>[1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  &quot;users&quot;.* FROM &quot;users&quot; WHERE &quot;users&quot;.&quot;id&quot; = ? LIMIT ?[0m  [[&quot;id&quot;, 980190962], [&quot;LIMIT&quot;, 1]]</code></pre>
+
+<p>Started GET “/users/980190962/edit” for 127.0.0.1 at 2016-10-10 11:24:26
+-0300 Processing by <a
+href="../../../classes/UsersController.html#method-i-edit">UsersController#edit</a>
+as HTML</p>
+
+<pre><code>Parameters: {&quot;id&quot;=&gt;&quot;980190962&quot;}
+[1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  &quot;users&quot;.* FROM &quot;users&quot; WHERE &quot;users&quot;.&quot;id&quot; = ? LIMIT ?[0m  [[&quot;id&quot;, 980190962], [&quot;LIMIT&quot;, 1]]
+Rendering users/edit.html.erb within layouts/application
+Rendered users/_form.html.erb (5.9ms)
+Rendered users/edit.html.erb within layouts/application (7.3ms)</code></pre>
+
+<p>Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.1ms)</p>
+
+<pre><code>[1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+[1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m</code></pre>
+<hr>
+
+<p>UsersControllerTest: test_should_show_user</p>
+<hr>
+
+<pre><code>[1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  &quot;users&quot;.* FROM &quot;users&quot; WHERE &quot;users&quot;.&quot;id&quot; = ? LIMIT ?[0m  [[&quot;id&quot;, 980190962], [&quot;LIMIT&quot;, 1]]</code></pre>
+
+<p>Started GET “/users/980190962” for 127.0.0.1 at 2016-10-10 11:24:26 -0300
+Processing by <a
+href="../../../classes/UsersController.html#method-i-show">UsersController#show</a>
+as HTML</p>
+
+<pre><code>Parameters: {&quot;id&quot;=&gt;&quot;980190962&quot;}
+[1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  &quot;users&quot;.* FROM &quot;users&quot; WHERE &quot;users&quot;.&quot;id&quot; = ? LIMIT ?[0m  [[&quot;id&quot;, 980190962], [&quot;LIMIT&quot;, 1]]
+Rendering users/show.html.erb within layouts/application
+[1m[36mPhone Load (0.2ms)[0m  [1m[34mSELECT &quot;phones&quot;.* FROM &quot;phones&quot; WHERE &quot;phones&quot;.&quot;user_id&quot; = ?[0m  [[&quot;user_id&quot;, 980190962]]
+Rendered users/show.html.erb within layouts/application (3.3ms)</code></pre>
+
+<p>Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.3ms)</p>
+
+<pre><code>[1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+[1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m</code></pre>
+<hr>
+
+<p>UsersControllerTest: test_should_create_user</p>
+<hr>
+
+<pre><code>[1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  &quot;users&quot;.* FROM &quot;users&quot; WHERE &quot;users&quot;.&quot;id&quot; = ? LIMIT ?[0m  [[&quot;id&quot;, 980190962], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM &quot;users&quot;[0m</code></pre>
+
+<p>Started POST “/users” for 127.0.0.1 at 2016-10-10 11:24:26 -0300 Processing
+by <a
+href="../../../classes/UsersController.html#method-i-create">UsersController#create</a>
+as HTML</p>
+
+<pre><code>Parameters: {&quot;user&quot;=&gt;{&quot;activo&quot;=&gt;&quot;false&quot;, &quot;apellido&quot;=&gt;&quot;MyString&quot;, &quot;detalles&quot;=&gt;&quot;MyText&quot;, &quot;edad&quot;=&gt;&quot;1&quot;, &quot;email&quot;=&gt;&quot;MyString&quot;, &quot;nombre&quot;=&gt;&quot;MyString&quot;}}
+[1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+[1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO &quot;users&quot; (&quot;nombre&quot;, &quot;apellido&quot;, &quot;email&quot;, &quot;activo&quot;, &quot;edad&quot;, &quot;detalles&quot;, &quot;created_at&quot;, &quot;updated_at&quot;) VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [[&quot;nombre&quot;, &quot;MyString&quot;], [&quot;apellido&quot;, &quot;MyString&quot;], [&quot;email&quot;, &quot;MyString&quot;], [&quot;activo&quot;, false], [&quot;edad&quot;, 1], [&quot;detalles&quot;, &quot;MyText&quot;], [&quot;created_at&quot;, 2016-10-10 14:25:00 UTC], [&quot;updated_at&quot;, 2016-10-10 14:25:00 UTC]]
+[1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m</code></pre>
+
+<p>Redirected to <a
+href="http://www.example.com/users/980190963">www.example.com/users/980190963</a>
+Completed 302 Found in 33656ms (ActiveRecord: 1.3ms)</p>
+
+<pre><code>[1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM &quot;users&quot;[0m
+[1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  &quot;users&quot;.* FROM &quot;users&quot; ORDER BY &quot;users&quot;.&quot;id&quot; DESC LIMIT ?[0m  [[&quot;LIMIT&quot;, 1]]
+[1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+[1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m</code></pre>
+<hr>
+
+<p>UsersControllerTest: test_should_update_user</p>
+<hr>
+
+<pre><code>[1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  &quot;users&quot;.* FROM &quot;users&quot; WHERE &quot;users&quot;.&quot;id&quot; = ? LIMIT ?[0m  [[&quot;id&quot;, 980190962], [&quot;LIMIT&quot;, 1]]</code></pre>
+
+<p>Started PATCH “/users/980190962” for 127.0.0.1 at 2016-10-10 11:25:00 -0300
+Processing by <a
+href="../../../classes/UsersController.html#method-i-update">UsersController#update</a>
+as HTML</p>
+
+<pre><code>Parameters: {&quot;user&quot;=&gt;{&quot;activo&quot;=&gt;&quot;false&quot;, &quot;apellido&quot;=&gt;&quot;MyString&quot;, &quot;detalles&quot;=&gt;&quot;MyText&quot;, &quot;edad&quot;=&gt;&quot;1&quot;, &quot;email&quot;=&gt;&quot;MyString&quot;, &quot;nombre&quot;=&gt;&quot;MyString&quot;}, &quot;id&quot;=&gt;&quot;980190962&quot;}
+[1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  &quot;users&quot;.* FROM &quot;users&quot; WHERE &quot;users&quot;.&quot;id&quot; = ? LIMIT ?[0m  [[&quot;id&quot;, 980190962], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+[1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m</code></pre>
+
+<p>Redirected to <a
+href="http://www.example.com/users/980190962">www.example.com/users/980190962</a>
+Completed 302 Found in 7ms (ActiveRecord: 0.5ms)</p>
+
+<pre><code>[1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+[1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m</code></pre>
+<hr>
+
+<p>TypesControllerTest: test_should_destroy_type</p>
+<hr>
+
+<pre><code>[1m[36mType Load (0.2ms)[0m  [1m[34mSELECT  &quot;types&quot;.* FROM &quot;types&quot; WHERE &quot;types&quot;.&quot;id&quot; = ? LIMIT ?[0m  [[&quot;id&quot;, 980190962], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM &quot;types&quot;[0m</code></pre>
+
+<p>Started DELETE “/types/980190962” for 127.0.0.1 at 2016-10-10 11:25:00
+-0300 Processing by <a
+href="../../../classes/TypesController.html#method-i-destroy">TypesController#destroy</a>
+as HTML</p>
+
+<pre><code>Parameters: {&quot;id&quot;=&gt;&quot;980190962&quot;}
+[1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  &quot;types&quot;.* FROM &quot;types&quot; WHERE &quot;types&quot;.&quot;id&quot; = ? LIMIT ?[0m  [[&quot;id&quot;, 980190962], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+[1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM &quot;types&quot; WHERE &quot;types&quot;.&quot;id&quot; = ?[0m  [[&quot;id&quot;, 980190962]]
+[1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m</code></pre>
+
+<p>Redirected to <a
+href="http://www.example.com/types">www.example.com/types</a> Completed 302
+Found in 5ms (ActiveRecord: 0.7ms)</p>
+
+<pre><code>[1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM &quot;types&quot;[0m
+[1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+[1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m</code></pre>
+<hr>
+
+<p>TypesControllerTest: test_should_update_type</p>
+<hr>
+
+<pre><code>[1m[36mType Load (0.2ms)[0m  [1m[34mSELECT  &quot;types&quot;.* FROM &quot;types&quot; WHERE &quot;types&quot;.&quot;id&quot; = ? LIMIT ?[0m  [[&quot;id&quot;, 980190962], [&quot;LIMIT&quot;, 1]]</code></pre>
+
+<p>Started PATCH “/types/980190962” for 127.0.0.1 at 2016-10-10 11:25:00 -0300
+Processing by <a
+href="../../../classes/TypesController.html#method-i-update">TypesController#update</a>
+as HTML</p>
+
+<pre><code>Parameters: {&quot;type&quot;=&gt;{&quot;tipo&quot;=&gt;&quot;MyString&quot;}, &quot;id&quot;=&gt;&quot;980190962&quot;}
+[1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  &quot;types&quot;.* FROM &quot;types&quot; WHERE &quot;types&quot;.&quot;id&quot; = ? LIMIT ?[0m  [[&quot;id&quot;, 980190962], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+[1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m</code></pre>
+
+<p>Redirected to <a
+href="http://www.example.com/types/980190962">www.example.com/types/980190962</a>
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms)</p>
+
+<pre><code>[1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+[1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m</code></pre>
+<hr>
+
+<p>TypesControllerTest: test_should_get_edit</p>
+<hr>
+
+<pre><code>[1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  &quot;types&quot;.* FROM &quot;types&quot; WHERE &quot;types&quot;.&quot;id&quot; = ? LIMIT ?[0m  [[&quot;id&quot;, 980190962], [&quot;LIMIT&quot;, 1]]</code></pre>
+
+<p>Started GET “/types/980190962/edit” for 127.0.0.1 at 2016-10-10 11:25:00
+-0300 Processing by <a
+href="../../../classes/TypesController.html#method-i-edit">TypesController#edit</a>
+as HTML</p>
+
+<pre><code>Parameters: {&quot;id&quot;=&gt;&quot;980190962&quot;}
+[1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  &quot;types&quot;.* FROM &quot;types&quot; WHERE &quot;types&quot;.&quot;id&quot; = ? LIMIT ?[0m  [[&quot;id&quot;, 980190962], [&quot;LIMIT&quot;, 1]]
+Rendering types/edit.html.erb within layouts/application
+Rendered types/_form.html.erb (2.6ms)
+Rendered types/edit.html.erb within layouts/application (4.3ms)</code></pre>
+
+<p>Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.1ms)</p>
+
+<pre><code>[1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+[1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m</code></pre>
+<hr>
+
+<p>TypesControllerTest: test_should_get_index</p>
+<hr>
+
+<pre><code>[1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  &quot;types&quot;.* FROM &quot;types&quot; WHERE &quot;types&quot;.&quot;id&quot; = ? LIMIT ?[0m  [[&quot;id&quot;, 980190962], [&quot;LIMIT&quot;, 1]]</code></pre>
+
+<p>Started GET “/types” for 127.0.0.1 at 2016-10-10 11:25:00 -0300 Processing
+by <a
+href="../../../classes/TypesController.html#method-i-index">TypesController#index</a>
+as HTML</p>
+
+<pre><code>Rendering types/index.html.erb within layouts/application
+[1m[36mType Load (0.2ms)[0m  [1m[34mSELECT &quot;types&quot;.* FROM &quot;types&quot;[0m
+Rendered types/index.html.erb within layouts/application (2.4ms)</code></pre>
+
+<p>Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.2ms)</p>
+
+<pre><code>[1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+[1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m</code></pre>
+<hr>
+
+<p>TypesControllerTest: test_should_show_type</p>
+<hr>
+
+<pre><code>[1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  &quot;types&quot;.* FROM &quot;types&quot; WHERE &quot;types&quot;.&quot;id&quot; = ? LIMIT ?[0m  [[&quot;id&quot;, 980190962], [&quot;LIMIT&quot;, 1]]</code></pre>
+
+<p>Started GET “/types/980190962” for 127.0.0.1 at 2016-10-10 11:25:00 -0300
+Processing by <a
+href="../../../classes/TypesController.html#method-i-show">TypesController#show</a>
+as HTML</p>
+
+<pre><code>Parameters: {&quot;id&quot;=&gt;&quot;980190962&quot;}
+[1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  &quot;types&quot;.* FROM &quot;types&quot; WHERE &quot;types&quot;.&quot;id&quot; = ? LIMIT ?[0m  [[&quot;id&quot;, 980190962], [&quot;LIMIT&quot;, 1]]
+Rendering types/show.html.erb within layouts/application
+Rendered types/show.html.erb within layouts/application (0.9ms)</code></pre>
+
+<p>Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.1ms)</p>
+
+<pre><code>[1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+[1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m</code></pre>
+<hr>
+
+<p>TypesControllerTest: test_should_create_type</p>
+<hr>
+
+<pre><code>[1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  &quot;types&quot;.* FROM &quot;types&quot; WHERE &quot;types&quot;.&quot;id&quot; = ? LIMIT ?[0m  [[&quot;id&quot;, 980190962], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM &quot;types&quot;[0m</code></pre>
+
+<p>Started POST “/types” for 127.0.0.1 at 2016-10-10 11:25:00 -0300 Processing
+by <a
+href="../../../classes/TypesController.html#method-i-create">TypesController#create</a>
+as HTML</p>
+
+<pre><code>Parameters: {&quot;type&quot;=&gt;{&quot;tipo&quot;=&gt;&quot;MyString&quot;}}
+[1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+[1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO &quot;types&quot; (&quot;tipo&quot;, &quot;created_at&quot;, &quot;updated_at&quot;) VALUES (?, ?, ?)[0m  [[&quot;tipo&quot;, &quot;MyString&quot;], [&quot;created_at&quot;, 2016-10-10 14:25:00 UTC], [&quot;updated_at&quot;, 2016-10-10 14:25:00 UTC]]
+[1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m</code></pre>
+
+<p>Redirected to <a
+href="http://www.example.com/types/980190963">www.example.com/types/980190963</a>
+Completed 302 Found in 4ms (ActiveRecord: 0.5ms)</p>
+
+<pre><code>[1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM &quot;types&quot;[0m
+[1m[36mType Load (0.2ms)[0m  [1m[34mSELECT  &quot;types&quot;.* FROM &quot;types&quot; ORDER BY &quot;types&quot;.&quot;id&quot; DESC LIMIT ?[0m  [[&quot;LIMIT&quot;, 1]]
+[1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+[1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m</code></pre>
+<hr>
+
+<p>TypesControllerTest: test_should_get_new</p>
+<hr>
+
+<pre><code>[1m[36mType Load (0.1ms)[0m  [1m[34mSELECT  &quot;types&quot;.* FROM &quot;types&quot; WHERE &quot;types&quot;.&quot;id&quot; = ? LIMIT ?[0m  [[&quot;id&quot;, 980190962], [&quot;LIMIT&quot;, 1]]</code></pre>
+
+<p>Started GET “/types/new” for 127.0.0.1 at 2016-10-10 11:25:00 -0300
+Processing by <a
+href="../../../classes/TypesController.html#method-i-new">TypesController#new</a>
+as HTML</p>
+
+<pre><code>Rendering types/new.html.erb within layouts/application
+Rendered types/_form.html.erb (1.9ms)
+Rendered types/new.html.erb within layouts/application (3.1ms)</code></pre>
+
+<p>Completed 200 OK in 7ms (Views: 5.4ms | ActiveRecord: 0.0ms)</p>
+
+<pre><code>[1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m</code></pre>
+
+    </div>
+  
+
+
+  
+
+
+  
+  
+
+
+  
+
+
+  
+
+  
+
+
+
+  
+
+    
+
+    
+
+    
+
+
+    
+
+
+    <!-- Methods -->
+              </div>
+
+    </div>
+  </body>
+</html>

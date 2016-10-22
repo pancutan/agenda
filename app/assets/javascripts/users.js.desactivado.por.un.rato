@@ -1,0 +1,20 @@
+jQuery(function() {
+  var provinces;
+  $('#user_province_id').parent().hide();
+  provinces = $('#user_province_id').html();
+  console.log(provinces);
+  return $('#user_country_id').change(function() {
+    var country, escaped_country, options;
+    country = $('#user_country_id :selected').text();
+    escaped_country = country.replace(/([ #;&,.+*~\':"!^$[\]()=>|\/@])/g, '\\$1');
+    options = $(provinces).filter("optgroup[label=" + escaped_country + "]").html();
+    console.log(options);
+    if (options) {
+      $('#user_province_id').html(options);
+      return $('#user_province_id').parent().show();
+    } else {
+      $('#user_province_id').empty();
+      return $('#user_province_id').parent().hide();
+    }
+  });
+});
