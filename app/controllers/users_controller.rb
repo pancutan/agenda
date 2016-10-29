@@ -16,16 +16,19 @@ class UsersController < ApplicationController
   # GET /users/new
   def new
     @user = User.new
-    @unpais = 10
+    @unpais = 10 # Predeterminamos, Argentina
+    @unaprovincia = 108 # Predeterminamos, Mendoza
   end
+
   # GET /users/1/edit
   def edit
+    binding.pry
+    @unpais = @user.province.country.id
   end
 
   # POST /users
   # POST /users.json
   def create
-    binding.pry
     @user = User.new(user_params)
     if params[:pais_elegido] != params[:unpais]  #Cambió el option por defecto, que era 10
       # Esto es para provocar que el formulario falle y se vuelva a crear

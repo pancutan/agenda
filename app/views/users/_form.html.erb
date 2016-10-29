@@ -62,7 +62,7 @@
 
   <div class="field">
     <%= f.label :province_id %><br />
-    <%= f.collection_select :province_id, Province.where(country_id: @unpais), :id, :provincia, {:selected => 108} %>
+    <%= f.collection_select :province_id, Province.where(country_id: @unpais), :id, :provincia, {:selected => @unaprovincia} %>
   </div>
 
   <div class="actions">
