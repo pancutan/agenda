@@ -43,15 +43,15 @@
 
   <div class="field">
     <%= f.label 'Telefono Fijo' %>
-    <%= text_field_tag :tel_fijo %>
+    <%= text_field_tag :tel_fijo, @tel_fijo %>
   </div>
   <div class="field">
     <%= f.label 'Telefono Celular' %>
-    <%= text_field_tag :tel_celular %>
+    <%= text_field_tag :tel_celular, @tel_celu %>
   </div>
   <div class="field">
     <%= f.label 'Telefono Laboral' %>
-    <%= text_field_tag :tel_laboral %>
+    <%= text_field_tag :tel_laboral, @tel_labo %>
   </div>
 
   <%= hidden_field_tag 'unpais', @unpais %>

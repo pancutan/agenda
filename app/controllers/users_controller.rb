@@ -24,6 +24,11 @@ class UsersController < ApplicationController
   def edit
     binding.pry
     @unpais = @user.province.country.id
+
+    # Buscamos los telefonos anteriores de este usuario
+    @tel_fijo = @user.phones.find_by(type_id: 1).telefono
+    @tel_celu = @user.phones.find_by(type_id: 2).telefono
+    @tel_labo = @user.phones.find_by(type_id: 3).telefono
   end
 
   # POST /users
@@ -31,11 +36,24 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if params[:pais_elegido] != params[:unpais]  #Cambió el option por defecto, que era 10
-      # Esto es para provocar que el formulario falle y se vuelva a crear
+      # Esto significa que no vamos a guardar los datos todavía.
+      # En su lugar vamos a crear el formulario de vuelta, con valores distintos en los selects
+
+      # Este es un truco sucio para provocar que el formulario falle y se vuelva a crear
       @user.province_id = nil
 
-      #Persistimos el nuevo pais escogido
+      # Persistimos el nuevo pais escogido
       @unpais = params[:pais_elegido].to_i
+
+      # Persistimos los telefonos enviados, para que no se pierdan.
+      # A diferencia de los campos propios del user (por ejemplo
+      # <%= f.text_field :nombre %>, recuerden que los controles
+      # text_field de los telefonos no esta creados con el objeto f
+      # perteneciente al <%= form_for user ... do |f|  %>
+      # Sino bajo text_field_tag independientes
+      @tel_fijo = params[:tel_fijo]
+      @tel_celu = params[:tel_celular]
+      @tel_labo = params[:tel_laboral]
     else
       @user.province_id = params[:user][:province_id].to_i
     end
@@ -49,6 +67,8 @@ class UsersController < ApplicationController
           fijo.user_id = @user.id
           fijo.save
         end
+
+        binding.pry
 
         # Lo mismo, mas corto
         if params[:tel_celular] != nil
