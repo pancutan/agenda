@@ -1,8 +1,25 @@
+h1 {
+    font-family: 'Oswald', sans-serif;
+}
+
+
 body {
-  background-color: #fff;
-  color: #333;
-  font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 13px;
+  // background-color: #fff;
+  // color: #333;
+
+  background: rgba(242,246,248,1);
+  background: -moz-linear-gradient(-45deg, rgba(242,246,248,1) 0%, rgba(216,225,231,1) 22%, rgba(181,198,208,1) 63%, rgba(224,239,249,1) 100%);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(242,246,248,1)), color-stop(22%, rgba(216,225,231,1)), color-stop(63%, rgba(181,198,208,1)), color-stop(100%, rgba(224,239,249,1)));
+  background: -webkit-linear-gradient(-45deg, rgba(242,246,248,1) 0%, rgba(216,225,231,1) 22%, rgba(181,198,208,1) 63%, rgba(224,239,249,1) 100%);
+  background: -o-linear-gradient(-45deg, rgba(242,246,248,1) 0%, rgba(216,225,231,1) 22%, rgba(181,198,208,1) 63%, rgba(224,239,249,1) 100%);
+  background: -ms-linear-gradient(-45deg, rgba(242,246,248,1) 0%, rgba(216,225,231,1) 22%, rgba(181,198,208,1) 63%, rgba(224,239,249,1) 100%);
+  background: linear-gradient(135deg, rgba(242,246,248,1) 0%, rgba(216,225,231,1) 22%, rgba(181,198,208,1) 63%, rgba(224,239,249,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f6f8', endColorstr='#e0eff9', GradientType=1 );
+
+  // font-family: verdana, arial, helvetica, sans-serif;
+  font-family: 'Quattrocento', serif;
+  font-size: 15px;
+
   line-height: 18px;
   margin: 33px;
 }

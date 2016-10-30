@@ -27,6 +27,12 @@ cd agenda
 bundle
 ```
 
+- Reseteen mi base y pueblenla con el mismo comando
+```
+rails db:reset
+```
+(este paso demora un rato)
+
 - Corran el proyecto
 ```
 rescue rails server
