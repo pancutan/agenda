@@ -37,6 +37,8 @@ rails db:reset
 ```
 rescue rails server
 ```
+- Observen cual es el usuario administrador, en el archivo
+```db/seeds.rb```
 
 - Si desean comparar vuestro código de este proyecto, de manera fácil, vean de utilizar alguna herramienta de comparación de código como meld
 ```
