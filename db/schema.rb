@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161019181628) do
+ActiveRecord::Schema.define(version: 20161104131800) do
 
   create_table "countries", force: :cascade do |t|
     t.string   "pais"
@@ -46,9 +46,11 @@ ActiveRecord::Schema.define(version: 20161019181628) do
     t.boolean  "activo"
     t.integer  "edad"
     t.text     "detalles"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
     t.integer  "province_id"
+    t.string   "password_digest"
+    t.boolean  "admin"
   end
 
 end

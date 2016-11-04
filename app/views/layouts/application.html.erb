@@ -10,6 +10,28 @@
   </head>
 
   <body>
+    <% usuario_en_curso = User.find_by_id(session[:user_id]) %>
+
+    <% if usuario_en_curso %>
+      Usuario en curso: <%= usuario_en_curso.nombre %> <%= usuario_en_curso.apellido %>
+
+      <% if usuario_en_curso.admin %>
+        (Administrador)
+      <% end %>
+
+      - <%= link_to 'Salir', logout_path, method: :delete %>
+
+      <p>
+      <b>Menu administradores: <b>
+        <% if usuario_en_curso.admin %>
+        - <%= link_to 'Usuarios',users_path %><br/>
+        <% end %>
+      </p>
+    <% else %>
+      <%= link_to 'Login', login_path %>
+    <% end %>
+    <hr>
+
     <%= yield %>
   </body>
 </html>

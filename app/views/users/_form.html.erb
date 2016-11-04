@@ -65,6 +65,21 @@
     <%= f.collection_select :province_id, Province.where(country_id: @unpais), :id, :provincia, {:selected => @unaprovincia} %>
   </div>
 
+  <div class="field">
+    <%= f.label :password %><br>
+    <%= f.password_field :password %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password_confirmation, 'Confirmar:' %>
+    <%= f.password_field :password_confirmation, size: 40 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :admin %><br>
+    <%= f.check_box :admin %>
+  </div>
+
   <div class="actions">
     <%= f.submit %>
   </div>
