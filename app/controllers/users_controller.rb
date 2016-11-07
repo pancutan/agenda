@@ -25,7 +25,6 @@ class UsersController < ApplicationController
   # GET /users/1/edit
   def edit
     # binding.pry
-
     # Buscamos los valroes anteriores para pre poblar los selects
     @unpais = @user.province.country.id
     @unaprovincia = @user.province_id

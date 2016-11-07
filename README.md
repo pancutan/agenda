@@ -9,7 +9,7 @@ ruby --version
 
 - Fabriquen una carpeta vacía, aparte
 ```
-mkdir Profesor
+mkdir VersionProfesor
 cd VersionProfesor
 ```
 
